@@ -11,3 +11,7 @@ free(time);
 ```
 
 *it's actually just bindings to Rust's std::time::SystemTime
+
+# Building
+
+Download rust and run `make`. The resulting .a file will be in the root directory.
