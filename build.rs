@@ -5,7 +5,7 @@ use cbindgen::{Config, Language};
 fn main() {
     let crate_dir = env::var("CARGO_MANIFEST_DIR").unwrap();
 
-    let output_file = "src/better_ctime.h";
+    let output_file = "include/better_ctime.h";
 
     let mut config = Config::default();
     config.namespace = None;
