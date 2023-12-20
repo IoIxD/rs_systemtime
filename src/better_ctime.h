@@ -50,6 +50,8 @@ struct Duration *duration_checked_mul(const struct Duration *self, uint32_t dur)
 
 struct SystemTime *new_system_time(void);
 
+struct SystemTime *system_time_get_epoch(void);
+
 struct Duration *system_time_get_duration(const struct SystemTime *self);
 
 #endif /* __INCLUDE_BETTER_CTIME_H */

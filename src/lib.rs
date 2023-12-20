@@ -138,6 +138,12 @@ impl SystemTime {
         }));
     }
     #[no_mangle]
+    pub extern "C" fn system_time_get_epoch() -> &'static mut Self {
+        return Box::leak(Box::new(Self {
+            time: std::time::SystemTime::UNIX_EPOCH,
+        }));
+    }
+    #[no_mangle]
     pub extern "C" fn system_time_get_duration(&self) -> &'static mut Duration {
         return Duration::from(self.time.elapsed().unwrap());
     }
