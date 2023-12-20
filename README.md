@@ -14,4 +14,4 @@ free(time);
 
 # Building
 
-Download rust and run `make`. The resulting .a file will be in the root directory.
+Download rust and run `make`. The resulting .a file will be in the root directory (or .dll if you use Windows).
