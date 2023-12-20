@@ -1,0 +1,15 @@
+[package]
+name = "better_ctime"
+version = "0.1.0"
+edition = "2021"
+
+
+[lib]
+crate-type = ["staticlib"]
+bench = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+cc = { version = "1.0.83", features = ["parallel"] }
+cbindgen = "0.26.0"
