@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
-project(better_ctime)
+project(rs_systemtime)
 
 FILE(GLOB sources src/dummy.c)
 
@@ -17,4 +17,4 @@ FetchContent_MakeAvailable(Corrosion)
 corrosion_import_crate(MANIFEST_PATH Cargo.toml)
 target_link_libraries(${PROJECT_NAME} bctime)
 
-set(BETTER_CTIME_INCLUDE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include)
+set(RS_SYSTEMTIME_INCLUDE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include CACHE INTERNAL "RS_SYSTEMTIME_INCLUDE_DIRECTORY")
