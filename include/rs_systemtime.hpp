@@ -1,11 +1,11 @@
-#ifndef __BETTER_CTIME_HPP
-#define __BETTER_CTIME_HPP
+#ifndef __RS_SYSTEMTIME_HPP
+#define __RS_SYSTEMTIME_HPP
 
 #include <cstdint>
 #include <cstdlib>
 namespace internal {
 extern "C" {
-#include "better_ctime.h"
+#include "rs_systemtime.h"
 }
 }  // namespace internal
 

@@ -1,5 +1,5 @@
-#ifndef __INCLUDE_BETTER_CTIME_H
-#define __INCLUDE_BETTER_CTIME_H
+#ifndef __INCLUDE_RS_SYSTEMTIME_H
+#define __INCLUDE_RS_SYSTEMTIME_H
 
 #include <stdarg.h>
 #include <stdbool.h>
@@ -54,4 +54,4 @@ struct SystemTime *system_time_get_epoch(void);
 
 struct Duration *system_time_get_duration(const struct SystemTime *self);
 
-#endif /* __INCLUDE_BETTER_CTIME_H */
+#endif /* __INCLUDE_RS_SYSTEMTIME_H */

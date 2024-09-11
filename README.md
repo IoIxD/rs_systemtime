@@ -4,6 +4,7 @@ Bindings for Rust's `SystemTime` to C/C++, because what's built in to both langu
 
 C++ Usage:
 ```cxx
+#include "rs_systemtime.hpp"
 auto time = new SystemTime();
 auto elapsed = time->get_duration();
 auto secs = elapsed->as_secs_f32();
@@ -12,6 +13,7 @@ printf("%1.1f\n", secs);
 
 C Usage:
 ```c
+#include "rs_systemtime.h"
 SystemTime *time = new_system_time();
 Duration *elapsed = system_time_get_duration(time);
 float secs = duration_as_secs_f32(elapsed);
