@@ -85,55 +85,27 @@ class Duration {
   };
 
   Duration* operator+(Duration& rhs) {
-#ifdef NDEBUG
-    return this->checked_add(&rhs);
-#else
     return this->saturating_add(&rhs);
-#endif
   };
 
   Duration* operator-(Duration& rhs) {
-#ifdef NDEBUG
-    return this->checked_sub(&rhs);
-#else
     return this->saturating_sub(&rhs);
-#endif
   };
   Duration* operator*(uint32_t rhs) {
-#ifdef NDEBUG
-    return this->checked_mul(rhs);
-#else
     return this->saturating_mul(rhs);
-#endif
   };
   Duration* operator*(float rhs) {
-#ifdef NDEBUG
     return this->mul_f32(rhs);
-#else
-    return this->mul_f32(rhs);
-#endif
   };
   Duration* operator*(double rhs) {
-#ifdef NDEBUG
     return this->mul_f64(rhs);
-#else
-    return this->mul_f64(rhs);
-#endif
   };
 
   Duration* operator/(float rhs) {
-#ifdef NDEBUG
     return this->div_f32(rhs);
-#else
-    return this->div_f32(rhs);
-#endif
   };
   Duration* operator/(double rhs) {
-#ifdef NDEBUG
     return this->div_f64(rhs);
-#else
-    return this->div_f64(rhs);
-#endif
   };
   friend class SystemTime;
 };
